@@ -1,4 +1,9 @@
 /* Styles for Mobile devices */
+body {
+  background-image: url(https://i.pinimg.com/736x/f8/33/f7/f833f771621bbb9d0cf76c58f81c21bf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container {
   min-width: 320px;
   max-width: 375px;

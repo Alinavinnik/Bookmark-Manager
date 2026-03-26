@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
+    <title>Bookmark-Manager</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -15,16 +15,24 @@
         <label>
           <input
             type="text"
-            name="search-text"
-            placeholder="search images..."
+            name="title-text"
+            placeholder="Please enter title"
             required
           />
         </label>
-        <button class="btn-search" type="submit">Search</button>
+        <label>
+          <input
+            type="url"
+            name="url-text"
+            placeholder="Add URL link"
+            required
+          />
+        </label>
+        <button class="btn-submit" type="submit">Add</button>
       </form>
-      <ul class="gallery"></ul>
-      <span class="loader is-hidden"></span>
-      <button class="load is-hidden" type="submit">load more</button>
+      <ul class="bookmark-list"></ul>
+      <button type="button" class="delete-btn">Delete</button>
+      <button type="button" class="edit-btn">Edit</button>
     </header>
     <script type="module" src="./main.js"></script>
   </body>
