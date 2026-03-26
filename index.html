@@ -6,11 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
+    <title>Bookmark-Manager</title>
     <script type="module" crossorigin src="/Bookmark-Manager/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/Bookmark-Manager/assets/vendor-BkC4bTqC.js">
-    <link rel="stylesheet" crossorigin href="/Bookmark-Manager/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/Bookmark-Manager/assets/index-CkmdSKxI.css">
+    <link rel="stylesheet" crossorigin href="/Bookmark-Manager/assets/index-DQvI_ImX.css">
   </head>
   <body>
     <header class="header container">
@@ -18,16 +16,24 @@
         <label>
           <input
             type="text"
-            name="search-text"
-            placeholder="search images..."
+            name="title-text"
+            placeholder="Please enter title"
             required
           />
         </label>
-        <button class="btn-search" type="submit">Search</button>
+        <label>
+          <input
+            type="url"
+            name="url-text"
+            placeholder="Add URL link"
+            required
+          />
+        </label>
+        <button class="btn-submit" type="submit">Add</button>
       </form>
-      <ul class="gallery"></ul>
-      <span class="loader is-hidden"></span>
-      <button class="load is-hidden" type="submit">load more</button>
+      <ul class="bookmark-list"></ul>
+      <button type="button" class="delete-btn">Delete</button>
+      <button type="button" class="edit-btn">Edit</button>
     </header>
   </body>
 </html>
