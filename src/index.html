@@ -13,26 +13,21 @@
     <header class="header container">
       <form class="form">
         <label>
+          Link name
           <input
             type="text"
-            name="title-text"
+            name="title"
             placeholder="Please enter title"
             required
           />
         </label>
         <label>
-          <input
-            type="url"
-            name="url-text"
-            placeholder="Add URL link"
-            required
-          />
+          Url address
+          <input type="url" name="url" placeholder="Add URL link" required />
         </label>
         <button class="btn-submit" type="submit">Add</button>
       </form>
       <ul class="bookmark-list"></ul>
-      <button type="button" class="delete-btn">Delete</button>
-      <button type="button" class="edit-btn">Edit</button>
     </header>
     <script type="module" src="./main.js"></script>
   </body>

@@ -1,8 +1,9 @@
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   margin: 25px 25px;
 }
 input {
@@ -25,12 +26,12 @@ input:active {
   border-radius: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: capitalize;
+  &:hover,
+  &:active {
+    background-color: #6c8cff;
+  }
 }
 
-.btn-submit:hover,
-.btn-submit:active {
-  background-color: #6c8cff;
-}
 .gallery {
   display: flex;
   flex-direction: column;
