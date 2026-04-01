@@ -15,5 +15,5 @@ export function createBookmarkItems(items) {
     return items.map(itemTemplate).join('');
   }
   const markup = itemsTemplate(itemsArray);
-  return bookMarkList.insertAdjacentHTML('beforeend', markup);
+  return markup;
 }

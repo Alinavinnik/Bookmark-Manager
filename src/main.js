@@ -3,9 +3,19 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { createBookmarkItems } from './render';
 const refs = {
   form: document.querySelector('.form'),
+  bookMarkList: document.querySelector('.bookmark-list'),
 };
 
-const { form } = refs;
+const { form, bookMarkList } = refs;
+document.addEventListener('DOMContentLoaded', () => {
+  const bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+
+  if (!bookmarks) {
+    return;
+  }
+  const markup = createBookmarkItems(bookmarks);
+  return (bookMarkList.innerHTML = markup);
+});
 
 form.addEventListener('submit', handleFormSubmit);
 
@@ -18,8 +28,8 @@ function handleFormSubmit(e) {
   };
   saveData(inputValue);
 
-  createBookmarkItems(inputValue);
-
+  const markup = createBookmarkItems(inputValue);
+  bookMarkList.insertAdjacentHTML('beforeend', markup);
   form.reset();
 }
 
