@@ -63,10 +63,50 @@ input {
   opacity: 0;
   visibility: hidden;
 }
-
 .bookmark-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.list-items {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 10px 70px;
+  border-radius: 100px;
+}
+.text-item {
+  display: flex;
   gap: 15px;
+  min-width: 200px;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+}
+.item-title {
+  max-width: 250px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+.delete-btn {
+  padding: 8px 15px;
+  margin-right: 15px;
+  border-radius: 8px;
+  background-color: rgba(156, 51, 25, 0.8);
+  color: #f3f3f3;
+  border: none;
+  flex-shrink: 0;
+}
+.edit-btn {
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #f3f3f3;
+  border: none;
+  background-color: rgba(16, 99, 16, 0.8);
+  flex-shrink: 0;
 }

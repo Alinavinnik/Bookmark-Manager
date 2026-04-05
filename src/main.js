@@ -1,7 +1,11 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { createBookmarkItems, itemTemplate } from './js/render';
-import { saveBookmark } from './js/bookmark-functions';
+import {
+  saveBookmark,
+  handleBtnDelete,
+  handleEditBtn,
+} from './js/bookmark-functions';
 const refs = {
   form: document.querySelector('.form'),
   bookMarkList: document.querySelector('.bookmark-list'),
@@ -43,3 +47,7 @@ function handleFormSubmit(e) {
 
   form.reset();
 }
+
+bookMarkList.addEventListener('click', handleBtnDelete);
+
+bookMarkList.addEventListener('click', handleEditBtn);
