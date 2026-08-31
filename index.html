@@ -14,17 +14,18 @@
     <script type="module" crossorigin src="/Bookmark-Manager/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Bookmark-Manager/assets/vendor-I1I71QQ2.js">
     <link rel="stylesheet" crossorigin href="/Bookmark-Manager/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/Bookmark-Manager/assets/index-DmgfvX6a.css">
+    <link rel="stylesheet" crossorigin href="/Bookmark-Manager/assets/index-DcmV21Iu.css">
   </head>
   <body>
-    <header class="header container">
+    <main class="content container">
       <div class="cloud-container">
         <div class="form-wrapper">
           <h1 class="form-title">Save your useful links</h1>
           <form class="form">
             <div class="input-wrapper">
-              <label for="title">Link name</label>
+              <label class="label" for="title">Link name</label>
               <input
+                class="form-input"
                 type="text"
                 name="title"
                 id="title"
@@ -33,8 +34,9 @@
               />
             </div>
             <div class="input-wrapper">
-              <label for="url">Url address</label>
+              <label for="url" class="label">Url address</label>
               <input
+                class="form-input"
                 type="url"
                 name="url"
                 id="url"
@@ -48,6 +50,6 @@
         </div>
       </div>
       <ul class="bookmark-list"></ul>
-    </header>
+    </main>
   </body>
 </html>
