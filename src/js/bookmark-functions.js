@@ -38,7 +38,7 @@ export function handleEditBtn(e) {
     inputUrl.type = 'url';
     //Add input value
     inputTitle.value = h1.textContent;
-    inputUrl.value = a.textContent;
+    inputUrl.value = a.href;
     //toggle elements
     h1.replaceWith(inputTitle);
     a.replaceWith(inputUrl);
@@ -55,7 +55,10 @@ export function handleEditBtn(e) {
     const a = document.createElement('a');
     a.href = inputUrl.value;
     a.textContent = inputUrl.value;
+    a.href = inputUrl.value;
+    a.textContent = 'Visit';
     a.target = '_blank';
+    a.classList.add('url-item');
 
     inputTitle.replaceWith(h1);
     inputUrl.replaceWith(a);
