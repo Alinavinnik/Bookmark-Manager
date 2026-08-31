@@ -7,11 +7,9 @@ export function createBookmarkItems(items) {
 //render one item
 export function itemTemplate(item) {
   return `<li class='list-items'>
-  <div class="text-item">
-          <h1 class="item-title white-wrapper">${item.title}</h1>
-          <a href="${item.url}" target="blank class="url-item ">Visit</a>
-          </div>
+          <h1 class="item-title">${item.title}</h1>
           <div class="buttons">
+           <a href="${item.url}" target="_blank" class="url-item">Visit</a>
           <button type="button" class="delete-btn">delete</button>
       <button type="button" class="edit-btn">edit</button>
       </div>
